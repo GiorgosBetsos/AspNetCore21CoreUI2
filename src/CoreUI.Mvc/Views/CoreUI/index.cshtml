@@ -1,4 +1,4 @@
-@{ Layout = ""; }
+﻿@{ Layout = ""; }
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
@@ -1392,10 +1392,13 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="~/lib/pace-progress/pace.min.js"></script>
     <script src="~/lib/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
-    <script src="~/lib/@@coreui/coreui/dist/js/coreui.min.js"></script>
-    <!-- Plugins and scripts required by this view-->
-    <script src="~/lib/chart.js/dist/Chart.min.js"></script>
-    <script src="~/lib/@@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
-    <script src="~/js/main.js"></script>
+  <script src="~/lib/@@coreui/coreui/dist/js/coreui.min.js"></script>
+  
+  @section Scripts {
+      <!-- Plugins and scripts required by this view-->
+      <script src="~/lib/chart.js/dist/Chart.min.js"></script>
+      <script src="=~/lib/@@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+      <script src="~/js/main.js"></script>
+  }
   </body>
 </html>
